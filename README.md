@@ -44,8 +44,13 @@ Lista errores relevantes que tuviste durante el desarrollo y qué hiciste para s
 
 
 
-# Taller Automatizacion 
-##Modulo: 
+# Taller Asignacion estudiantes
+##Modulo: Este taller implementa una asnacion de parejas para su respectiva evaluacion y coevaluacion durante el proyecto en grupo
 ## Elementos:
-Clase docente 
-Clase database
+id_evaluacion: Identificador único de la evaluación
+fecha: Fecha de evaluación
+profesor1: Nombre del primer profesor
+profesor2: Nombre del segundo profesor
+estado_coherencia:Estado de coherencia (por defecto "No")
+## Métodos:
+__init__(id_evaluacion, fecha, profesor1, profesor2): Constructor de clase 
