@@ -1,0 +1,13 @@
+
+class Evaluacion:
+   id_evaluacion = ""
+   fecha = ""
+   profesor1 = ""
+   profesor2 = ""
+   estado_coherencia = "No"
+
+def __init__(self, id_evaluacion, fecha, profesor1, profesor2):
+   self.id_evaluacion = id_evaluacion
+   self.fecha = fecha
+   self.profesor1 = profesor1
+   self.profesor2 = profesor2

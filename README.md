@@ -38,3 +38,14 @@ Lista errores relevantes que tuviste durante el desarrollo y qué hiciste para s
 ## 6. Reflexión final
 
 ¿Qué harías diferente si volvieras a empezar el proyecto? ¿Qué fue lo más difícil?
+
+
+
+
+
+
+# Taller Automatizacion 
+##Modulo: 
+## Elementos:
+Clase docente 
+Clase database
