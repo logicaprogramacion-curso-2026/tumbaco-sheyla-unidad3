@@ -34,25 +34,28 @@ python main.py
 ## 3. Estructura del repositorio
 
 
+
 ```
 tumbaco-sheyla-unidad3/
 ├── src/
-│ ├── main.py # Menú principal (Capa 3 - Interfaz)
-│ ├── estudiantes.py # Datos de estudiantes (Capa 1 - Datos)
-│ ├── evaluaciones.py # Datos de evaluaciones (Capa 1 - Datos)
-│ ├── gestion_evaluaciones.py # Lógica de negocio (Capa 2 - Funciones)
-│ ├── test_funciones.py # Pruebas unitarias
-│ ├── database.py # Conexión a base de datos
-│ ├── taller8-automatizacion # Taller de automatización
-│ ├── .gitignore # Archivos ignorados en GitHub
-│ ├── BITACORA.md # Registro de avances por fase
-│ └── README.md # Este archivo
+│ ├── main.py                     # Menú principal (Capa 3 - Interfaz)
+│ ├── estudiantes.py              # Datos de estudiantes (Capa 1 - Datos)
+│ ├── evaluaciones.py             # Datos de evaluaciones (Capa 1 - Datos)
+│ ├── gestion_evaluaciones.py     # Lógica de negocio (Capa 2 - Funciones)
+│ ├── test_funciones.py           # Pruebas unitarias
+│ ├── database.py                 # Conexión a base de datos
+│ ├── taller8-automatizacion      # Taller de automatización
+│ ├── .gitignore                  # Archivos ignorados en GitHub
+│ ├── BITACORA.md                 # Registro de avances por fase
+│ └── README.md                   # Este archivo
 └── docs/
-    └── (documentación, capturas, diagramas)
+    └──  (documentación, capturas, diagramas)
 ```
+
 --- 
 
 ## 4. Decisiones de diseño
+
 
 Organización en 3 capas
 
@@ -71,6 +74,7 @@ Estructuras adicionales
 
 
 ## 5. Problemas encontrados y cómo los resolviste
+
 
 Semana 1 - Estructura base (12/06/26)
 
@@ -148,6 +152,7 @@ Semana 4 - Pruebas y Estructura Final (Actual)
 ## 6. Reflexión final
 
 
+
 ¿Qué haríamos diferente?
 
 · Leer la rúbrica con más atención desde el principio para evitar malentendidos.
@@ -166,17 +171,17 @@ Este proyecto nos enseñó que la programación no es solo escribir código, sin
 
 ---
 
+# [Taller Asignación estudiantes]
 
-# Taller Asignación estudiantes
 
 ##Modulo: Este taller implementa una asignación de parejas para su respectiva evaluacion y coevaluacion durante el proyecto en grupo
-## Elementos:
+##Elementos:
 id_evaluacion: Identificador único de la evaluación
 fecha: Fecha de evaluación
 profesor1: Nombre del primer profesor
 profesor2: Nombre del segundo profesor
 estado_coherencia:Estado de coherencia (por defecto "No")
-## Métodos:
+##Métodos:
 __init__(id_evaluacion, fecha, profesor1, profesor2): Constructor de clase 
 
 ---
