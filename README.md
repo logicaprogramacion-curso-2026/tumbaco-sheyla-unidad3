@@ -3,11 +3,13 @@
 # [NTEGRANTES DEL PROYECTO]
 ---
 **DOMENICA BELEN RODRIGUEZ NARANJO**
+---
 **MAYDELEINE SAMIRA SANCHEZ MONROY**
+---
 **SHEYLA ARLETTE TUMBACO MORÁN**
-
+---
 **Curso:** [Lógica de Programación]
-
+---
 **Fecha de inicio:** [12/06/2026]
 --- 
 
@@ -102,7 +104,6 @@ Problema: Usamos from src.services.gestion_evaluation import GestionEvaluacion (
 Solución: Corregimos a from src.services.gestion_evaluacion import GestionEvaluacion (español).
 
 
-
 ---
 
 # [Taller Asignación estudiantes]
@@ -110,11 +111,15 @@ Solución: Corregimos a from src.services.gestion_evaluacion import GestionEvalu
 
 # Modulo: Este taller implementa una asignación de parejas para su respectiva evaluacion y coevaluacion durante el proyecto en grupo
 # Elementos:
-id_evaluacion: Identificador único de la evaluación
-fecha: Fecha de evaluación
-profesor1: Nombre del primer profesor
-profesor2: Nombre del segundo profesor
-estado_coherencia:Estado de coherencia (por defecto "No")
+# id_evaluacion:
+Identificador único de la evaluación
+## fecha: Fecha de evaluación
+# profesor1: 
+Nombre del primer profesor
+# profesor2: 
+Nombre del segundo profesor
+# estado_coherencia:
+Estado de coherencia (por defecto "No")
 # Métodos:
 __init__(id_evaluacion, fecha, profesor1, profesor2): Constructor de clase 
 
