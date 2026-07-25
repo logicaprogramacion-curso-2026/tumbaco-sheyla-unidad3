@@ -1,11 +1,14 @@
 # [AUTOMATIZACIÓN DE LOGÍSTICA Y COHERENCIA]
-**Alumno:** [Apellido, Nombre]
+**Alumno:** [Tumbaco, Sheyla]
 # [NTEGRANTES DEL PROYECTO]
+---
 **DOMENICA BELEN RODRIGUEZ NARANJO**
 **MAYDELEINE SAMIRA SANCHEZ MONROY**
 **SHEYLA ARLETTE TUMBACO MORÁN**
+
 **Curso:** [Lógica de Programación]
 **Fecha de inicio:** [12/06/2026]
+--- 
 
 ## 1. Objetivo del proyecto
 
@@ -27,7 +30,9 @@ cd tumbaco-sheyla-unidad3
 cd src
 python main.py
 
+
 ## 3. Estructura del repositorio
+
 
 ```
 tumbaco-sheyla-unidad3/
@@ -45,6 +50,7 @@ tumbaco-sheyla-unidad3/
 └── docs/
     └── (documentación, capturas, diagramas)
 ```
+--- 
 
 ## 4. Decisiones de diseño
 
@@ -62,6 +68,7 @@ Estructuras adicionales
 · import random: Para generar parejas aleatorias con random.shuffle().
 · while True: Permite que el menú se repita hasta que el usuario decida salir.
 · match case: Maneja las opciones del menú de forma clara y legible.
+
 
 ## 5. Problemas encontrados y cómo los resolviste
 
@@ -83,6 +90,7 @@ Estructuras adicionales implementadas:
 · while True: Permite que nuestro menú se repita varias veces.
 
 ---
+
 
 Semana 2 - Elaboración de Definiciones del Proyecto (15/06/26)
 
@@ -109,6 +117,7 @@ Lección aprendida: Nos dimos cuenta de que habíamos malinterpretado la tarea a
 
 ---
 
+
 Semana 3 - Prototipo de Capa 1 y 2 (19/06 - 22/06/26)
 
 Entre estas fechas nos dedicamos a agregar la capa 1 y 2 en nuestro código de automatización.
@@ -125,6 +134,7 @@ CAPA 2 (FUNCIONES): Utilizamos def para crear nuestras funciones:
 
 ---
 
+
 Semana 4 - Pruebas y Estructura Final (Actual)
 
 · Implementación de pruebas unitarias en test_funciones.py
@@ -134,7 +144,9 @@ Semana 4 - Pruebas y Estructura Final (Actual)
 
 ---
 
+
 ## 6. Reflexión final
+
 
 ¿Qué haríamos diferente?
 
@@ -152,14 +164,11 @@ Conclusión
 
 Este proyecto nos enseñó que la programación no es solo escribir código, sino también planificar, organizar y trabajar en equipo. Aprendimos a usar GitHub para colaborar, a documentar nuestro proceso y a resolver problemas de forma autónoma. ¡Fue una experiencia enriquecedora!
 
-
-
-
-
-
+---
 
 
 # Taller Asignación estudiantes
+
 ##Modulo: Este taller implementa una asignación de parejas para su respectiva evaluacion y coevaluacion durante el proyecto en grupo
 ## Elementos:
 id_evaluacion: Identificador único de la evaluación
@@ -169,3 +178,5 @@ profesor2: Nombre del segundo profesor
 estado_coherencia:Estado de coherencia (por defecto "No")
 ## Métodos:
 __init__(id_evaluacion, fecha, profesor1, profesor2): Constructor de clase 
+
+---
