@@ -123,4 +123,21 @@ Estado de coherencia (por defecto "No")
 # Métodos:
 __init__(id_evaluacion, fecha, profesor1, profesor2): Constructor de clase 
 
+# REFLEXIÓN FINAL 
+¿Qué haríamos diferente?
+
+· Leer la rúbrica con más atención desde el principio para evitar malentendidos.
+· Planificar mejor las capas antes de empezar a codificar.
+· Hacer commits más pequeños en GitHub para tener un mejor historial de cambios.
+
+¿Qué fue lo más difícil?
+
+· Entender cómo organizar el código en capas.
+· Implementar random.shuffle() correctamente para que las parejas cambien cada vez.
+· Depurar errores de sintaxis como los strings mal escritos.
+
+Conclusión
+
+Este proyecto nos enseñó que la programación no es solo escribir código, sino también planificar, organizar y trabajar en equipo. Aprendimos a usar GitHub para colaborar, a documentar nuestro proceso y a resolver problemas de forma autónoma. ¡Fue una experiencia enriquecedora!
+
 ---
