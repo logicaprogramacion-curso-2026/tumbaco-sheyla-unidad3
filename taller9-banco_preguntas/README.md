@@ -1,20 +1,48 @@
-# TALLER 9 - BANCO DE PREGUNTAS
-
-## Grupo 7
-- TUMBACO MORAN, SHEYLA ARLETTE
-- RODRIGUEZ NARANJO, DOMENICA BELEN
-- SANCHEZ MONROY, MAYDELEINE SAMIRA
-
-## Como ejecutar
-```bash
-python src/main.py
-
-## Archivos que te faltan en
+## DESCRIPCION
+Sistema que carga preguntas desde archivos TXT, CSV y JSON, las almacena en SQLite, simula evaluaciones y genera reportes.
 
 ---
 
-### `tests/__init__.py`
+## ESTRUCTURA DEL PROYECTO
 
-```python
+taller9-banco_preguntas/
+├── preguntas.txt
+├── preguntas.csv
+├── preguntas.json
+├── src/
+│ ├── entidad.py
+│ ├── dao.py
+│ ├── gestor.py
+│ ├── simulador.py
+│ └── main.py
+├── database/
+├── resultados/
+├── tests/
+├── requirements.txt
+└── README.md
 
-# Pruebas del Taller 9
+---
+
+## REQUISITOS
+- Python 3.8+
+- SQLite3
+
+---
+
+## COMO EJECUTAR
+
+```bash
+cd taller9-banco_preguntas
+python src/main.py
+
+MENU PRINCIPAL
+
+1 -> Cargar preguntas desde archivo
+2 -> Ver todas las preguntas
+3 -> Ver estadisticas
+4 -> Iniciar simulacion
+5 -> Exportar datos
+6 -> Ver reportes
+7 -> Salir
+
+---
