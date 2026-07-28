@@ -5,6 +5,8 @@ Sistema que carga preguntas desde archivos TXT, CSV y JSON, las almacena en SQLi
 
 ## ESTRUCTURA DEL PROYECTO
 
+
+```
 taller9-banco_preguntas/
 ├── preguntas.txt
 ├── preguntas.csv
