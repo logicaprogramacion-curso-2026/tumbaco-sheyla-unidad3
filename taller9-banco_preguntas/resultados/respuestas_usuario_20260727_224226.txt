@@ -1,0 +1,29 @@
+============================================================
+REPORTE DE EVALUACIÓN
+============================================================
+Fecha: 27/07/2026 22:42
+Total: 5
+Correctas: 4
+Porcentaje: 80.0%
+------------------------------------------------------------
+
+Pregunta 1: ¿Cuál es la salida de bool([])?
+Tu respuesta: B
+Correcta: B
+----------------------------------------
+Pregunta 2: ¿Qué palabra clave se usa para manejar excepciones?
+Tu respuesta: C
+Correcta: A
+----------------------------------------
+Pregunta 3: ¿Qué función obtiene la longitud de una lista?
+Tu respuesta: C
+Correcta: C
+----------------------------------------
+Pregunta 4: ¿Cómo se crea un diccionario?
+Tu respuesta: C
+Correcta: C
+----------------------------------------
+Pregunta 5: ¿Qué palabra clave define una función?
+Tu respuesta: B
+Correcta: B
+----------------------------------------

@@ -1,0 +1,53 @@
+{
+    "fecha": "2026-07-27 22:58:53",
+    "total_preguntas": 5,
+    "correctas": 4,
+    "puntaje": 8.0,
+    "detalle_respuestas": [
+        {
+            "id": 40,
+            "pregunta": "¿Cuál es la salida de 'Python'[::-1]?",
+            "respuesta_usuario": "A",
+            "respuesta_correcta": "A",
+            "es_correcta": true,
+            "tema": "Strings",
+            "dificultad": "Media"
+        },
+        {
+            "id": 25,
+            "pregunta": "¿Qué palabra clave se usa para crear una clase?",
+            "respuesta_usuario": "A",
+            "respuesta_correcta": "A",
+            "es_correcta": true,
+            "tema": "Programación Orientada a Objetos",
+            "dificultad": "Fácil"
+        },
+        {
+            "id": 24,
+            "pregunta": "¿Cuál es la salida de 5 == 5.0?",
+            "respuesta_usuario": "D",
+            "respuesta_correcta": "A",
+            "es_correcta": false,
+            "tema": "Comparaciones",
+            "dificultad": "Media"
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Qué función obtiene la longitud de una lista?",
+            "respuesta_usuario": "C",
+            "respuesta_correcta": "C",
+            "es_correcta": true,
+            "tema": "Funciones Built-in",
+            "dificultad": "Fácil"
+        },
+        {
+            "id": 23,
+            "pregunta": "¿Qué método cuenta las ocurrencias de un elemento en una lista?",
+            "respuesta_usuario": "A",
+            "respuesta_correcta": "A",
+            "es_correcta": true,
+            "tema": "Listas",
+            "dificultad": "Media"
+        }
+    ]
+}

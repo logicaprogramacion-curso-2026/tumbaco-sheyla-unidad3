@@ -1,0 +1,19 @@
+REPORTE DE SIMULACION - 2026-07-27 22:58:53
+Puntaje: 8.00/10 (4/5 correctas)
+==================================================
+
+[CORRECTO] ID 40: ¿Cuál es la salida de 'Python'[::-1]?
+ Tu respuesta: A | Correcta: A
+
+[CORRECTO] ID 25: ¿Qué palabra clave se usa para crear una clase?
+ Tu respuesta: A | Correcta: A
+
+[INCORRECTO] ID 24: ¿Cuál es la salida de 5 == 5.0?
+ Tu respuesta: D | Correcta: A
+
+[CORRECTO] ID 2: ¿Qué función obtiene la longitud de una lista?
+ Tu respuesta: C | Correcta: C
+
+[CORRECTO] ID 23: ¿Qué método cuenta las ocurrencias de un elemento en una lista?
+ Tu respuesta: A | Correcta: A
+
