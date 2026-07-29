@@ -20,137 +20,151 @@ def main():
     gestor = GestorPreguntas()
     dao = PreguntaDAO()
     simulador = Simulador()
-    
-    # Garantizar que la tabla exista en SQLite desde el inicio
+
     try:
         dao.crear_tabla()
-    except Exception as e:
+    except Exception:
         pass
-    
+
     while True:
         mostrar_menu()
         opcion = input(" Elige: ")
-        
+
         if opcion == "1":
             print("\nCARGAR PREGUNTAS")
             print(" 1 -> Desde TXT")
             print(" 2 -> Desde CSV")
             print(" 3 -> Desde JSON")
+
             sub = input(" Elige: ")
+
             try:
                 if sub == "1":
-                    preguntas = gestor.cargar_desde_txt('preguntas.txt')
+                    preguntas = gestor.cargar_desde_txt("preguntas.txt")
+
                 elif sub == "2":
-                    preguntas = gestor.cargar_desde_csv('preguntas.csv')
+                    preguntas = gestor.cargar_desde_csv("preguntas.csv")
+
                 elif sub == "3":
-                    preguntas = gestor.cargar_desde_json('preguntas.json')
+                    preguntas = gestor.cargar_desde_json("preguntas.json")
+
                 else:
-                    print("Opcion invalida")
+                    print("Opción inválida")
                     input("\nPresiona Enter para continuar...")
                     continue
-                
-                print(f"\n {len(preguntas)} preguntas cargadas desde el archivo.")
+
+                print(f"\n{len(preguntas)} preguntas cargadas desde el archivo.")
+
                 guardar = input("¿Guardar en la base de datos? (s/n): ")
-                if guardar.lower() == 's':
+
+                if guardar.lower() == "s":
                     gestor.guardar_en_base_datos(preguntas)
-                    print("Preguntas guardadas con éxito en la base de datos SQLite.")
+                    print("Preguntas guardadas con éxito en SQLite.")
+
             except FileNotFoundError as e:
                 print(f"Archivo no encontrado: {e}")
+
             except Exception as e:
                 print(f"Error al cargar: {e}")
-            
-            input("\nPresiona Enter para volver al menu...")
-        
+
+            input("\nPresiona Enter para volver al menú...")
+
         elif opcion == "2":
             preguntas = dao.obtener_todas()
+
             if not preguntas:
-                print("\n No hay preguntas en la base de datos.")
-                print("Pista: Usa la Opcion 1 para cargar preguntas y presiona 's' para guardarlas en la BD.")
+                print("\nNo hay preguntas en la base de datos.")
             else:
-                print(f"\n--- TOTAL EN BD: {len(preguntas)} preguntas ---")
+                print(f"\nTOTAL: {len(preguntas)} preguntas")
+
                 for p in preguntas[:10]:
-                    # Soporta si 'p' es un objeto o una tupla de SQLite
-                    p_id = getattr(p, 'id', p[0] if isinstance(p, (tuple, list)) else 'N/A')
-                    p_txt = getattr(p, 'pregunta', p[1] if isinstance(p, (tuple, list)) else 'N/A')
-                    p_dif = getattr(p, 'dificultad', p[7] if isinstance(p, (tuple, list)) else 'N/A')
-                    print(f" [{p_id}] {str(p_txt)[:60]}... ({p_dif})")
-                
+                    p_id = getattr(p, "id", p[0] if isinstance(p, (tuple, list)) else "")
+                    p_txt = getattr(p, "pregunta", p[1] if isinstance(p, (tuple, list)) else "")
+                    p_dif = getattr(p, "dificultad", p[7] if isinstance(p, (tuple, list)) else "")
+
+                    print(f"[{p_id}] {p_txt} ({p_dif})")
+
                 if len(preguntas) > 10:
-                    print(f" ... y {len(preguntas)-10} preguntas más.")
-            
-            # Pausa obligatoria para que el usuario pueda leer la información
-            input("\nPresiona Enter para volver al menu...")
-        
+                    print(f"... y {len(preguntas)-10} preguntas más.")
+
+            input("\nPresiona Enter para volver al menú...")
+
         elif opcion == "3":
-            stats = dao.estadisticas_por_tema()
-            total = dao.contar_preguntas()
-            print(f"\nTOTAL PREGUNTAS EN BD: {total}")
-            if stats:
-                print("\nPOR TEMA:")
-                for fila in stats:
-                    print(f" {fila}")
-            else:
-                print("No hay datos estadisticos disponibles.")
-            
-            input("\nPresiona Enter para volver al menu...")
-        
+            print(f"\nTOTAL: {dao.contar_preguntas()}")
+
+            for fila in dao.estadisticas_por_tema():
+                print(fila)
+
+            input("\nPresiona Enter para volver al menú...")
+
         elif opcion == "4":
             try:
-                cantidad = int(input("¿Cuántas preguntas deseas en la simulación? (max 50): "))
+                cantidad = int(input("Cantidad de preguntas (máx. 50): "))
+
                 if cantidad > 50:
                     cantidad = 50
+
                 simulador.iniciar_simulacion(cantidad)
+
             except ValueError:
-                print("Ingresa un número válido")
-            
-            input("\nPresiona Enter para volver al menu...")
-        
+                print("Número inválido")
+
+            input("\nPresiona Enter para volver al menú...")
+
         elif opcion == "5":
-            os.makedirs('resultados', exist_ok=True)
-            print("\nEXPORTAR DATOS")
-            print(" 1 -> Exportar a TXT")
-            print(" 2 -> Exportar a CSV")
-            print(" 3 -> Exportar a JSON")
-            sub = input(" Elige: ")
-            
+
+            os.makedirs("resultados", exist_ok=True)
+
             preguntas = dao.obtener_todas()
+
             if not preguntas:
-                print("No hay preguntas en la base de datos para exportar")
+                print("No hay preguntas para exportar.")
+
             else:
+                print("\n1 -> TXT")
+                print("2 -> CSV")
+                print("3 -> JSON")
+
+                sub = input("Elige: ")
+
                 if sub == "1":
-                    gestor.exportar_a_txt('resultados/exportacion.txt', preguntas)
+                    gestor.exportar_a_txt("resultados/exportacion.txt", preguntas)
+
                 elif sub == "2":
-                    gestor.exportar_a_csv('resultados/exportacion.csv', preguntas)
+                    gestor.exportar_a_csv("resultados/exportacion.csv", preguntas)
+
                 elif sub == "3":
-                    gestor.exportar_a_json('resultados/exportacion.json', preguntas)
-                else:
-                    print("Opcion invalida")
-                print("Exportación completada en la carpeta 'resultados/'")
-            
-            input("\nPresiona Enter para volver al menu...")
-        
+                    gestor.exportar_a_json("resultados/exportacion.json", preguntas)
+
+                print("Exportación completada.")
+
+            input("\nPresiona Enter para volver al menú...")
+
         elif opcion == "6":
-            if os.path.exists('resultados'):
-                archivos = os.listdir('resultados')
+
+            if os.path.exists("resultados"):
+
+                archivos = os.listdir("resultados")
+
                 if archivos:
-                    print("\nREPORTES DISPONIBLES EN 'resultados/':")
+                    print("\nREPORTES:")
                     for archivo in archivos:
-                        print(f" {archivo}")
+                        print(archivo)
                 else:
-                    print("No hay archivos en la carpeta resultados/")
+                    print("No hay reportes.")
+
             else:
-                print("No se encuentra la carpeta resultados/")
-            
-            input("\nPresiona Enter para volver al menu...")
-        
+                print("No existe la carpeta resultados.")
+
+            input("\nPresiona Enter para volver al menú...")
+
         elif opcion == "7":
             print("\n¡Hasta luego!")
             break
+
         else:
             print("Opción inválida")
             input("\nPresiona Enter para continuar...")
 
 if __name__ == "__main__":
     main()
-
-

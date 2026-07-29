@@ -2,7 +2,7 @@
 # Reemplaza este archivo con tu código (o usa el lenguaje que corresponda al curso)
 # PROYECTO GRUPO 7 - Lógica de Programación - AUTOMATIZACIÓN DE LOGÍSTICA Y COHERENCIA
 import random
-from src.services.gestion_evaluacion import GestionEvaluacion
+from scr.services.gestion_evaluacion import GestionEvaluacion
 
 def main():
     """Función principal del programa."""

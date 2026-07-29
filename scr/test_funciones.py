@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.services.gestion_evaluacion import GestionEvaluacion
+from scr.services.gestion_evaluacion import GestionEvaluacion
 
 def test_funciones_originales():
 

@@ -1,6 +1,6 @@
 import random
-from src.models.estudiante import Estudiante
-from src.models.evaluacion import Evaluacion
+from scr.models.estudiante import Estudiante
+from scr.models.evaluaci import Evaluacion
 
 class GestionEvaluacion:
     """
