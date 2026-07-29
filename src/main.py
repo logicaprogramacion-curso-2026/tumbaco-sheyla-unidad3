@@ -1,4 +1,5 @@
 # Punto de entrada del programa
+#Este archivo es el punto de entrada del programa. Aquí se inicializa la clase GestionEvaluacion y se ejecuta el menú principal para interactuar con el usuario.
 # PROYECTO GRUPO 7 - Lógica de Programación - AUTOMATIZACIÓN DE LOGÍSTICA Y COHERENCIA
 import random
 from scr.services.gestion_evaluacion import GestionEvaluacion
