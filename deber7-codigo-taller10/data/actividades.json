@@ -1,0 +1,22 @@
+{
+  "actividades": [
+    {
+      "nombre": "Taller de Programación",
+      "tipo": "taller",
+      "nivel_requerido": "intermedio",
+      "acepta_consejos": true
+    },
+    {
+      "nombre": "Cluber de Robótica",
+      "tipo": "cluber",
+      "nivel_requerido": "avanzado",
+      "acepta_consejos": true
+    },
+    {
+      "nombre": "Taller de Diseño",
+      "tipo": "taller",
+      "nivel_requerido": "básico",
+      "acepta_consejos": true
+    }
+  ]
+}
