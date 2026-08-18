@@ -1,0 +1,3 @@
+2026-08-18 20:57:58.342911 - ERROR: Producto ID 99 no existe en el catálogo
+2026-08-18 20:58:20.391410 - ERROR: Producto ID 444 no existe en el catálogo
+2026-08-18 20:58:31.279062 - ERROR: Producto ID 666 no existe en el catálogo
